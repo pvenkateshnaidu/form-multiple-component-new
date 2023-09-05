@@ -1,0 +1,12 @@
+<form [formGroup]="parentForm" style="margin:30px">
+  <app-address [form]="parentForm.get('home')"></app-address>
+
+  <app-office-addr [form]="parentForm.get('office')"></app-office-addr>
+  <button type="button">Submit</button>
+</form>
+{{ parentForm.status }}
+
+<p>Parent Compoent</p>
+<pre>
+  {{ parentForm.value | json }}
+</pre>

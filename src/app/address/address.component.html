@@ -1,0 +1,14 @@
+<p>Home Address</p>
+<form [formGroup]="form">
+  <input type="text" formControlName="street" placeholder="street" />
+
+  <p></p>
+  <input type="text" formControlName="city" placeholder="city" />
+
+  <p></p>
+  <input type="text" formControlName="zip" placeholder="zip" />
+</form>
+<p>Home Address Compoent</p>
+<pre
+  >{{ parentformAcessChild.value | json }}
+</pre>

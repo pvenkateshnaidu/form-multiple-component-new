@@ -1,0 +1,11 @@
+<p>Office Address</p>
+
+<form [formGroup]="form">
+  <input type="text" formControlName="street" placeholder="street" />
+  <p></p>
+  <input type="text" formControlName="city" placeholder="city" />
+</form>
+<p>Office Address Compoent</p>
+<pre
+  >{{ parentformAcessOfficeChild?.value | json }}
+</pre>
